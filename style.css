@@ -1,0 +1,119 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #3498db;
+    font-size: 'Montserrat', sans-serif;
+}
+
+nav {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:darkgreen;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+nav .container a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .container .left,
+nav .container .right {
+    width: 50%;
+    display: flex;
+}
+
+nav .container .left {
+    justify-content: start;
+}
+
+nav .container .left .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav .container .right {
+    justify-content: end;
+}
+
+nav .container .right .sign-in,
+nav .container .right .sign-up {
+    padding: 6px 14px 6px 14px;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav .container .right .sign-in {
+    background-color: coral;
+    margin-left: 10px;
+}
+
+nav .container .right .sign-up {
+    background-color: darkred;
+    margin-right: 10px;
+}
+
+section.main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:blueviolet;
+}
+
+section.main h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: azure;
+    font-family: 'Montserrat';
+}
+
+.card h2 {
+  color: rgb(51, 51, 51);
+  text-align: center;
+  text-transform: uppercase;
+}
+ 
+.card {
+    position: relative;
+  padding: 20px;
+  margin: 50px auto;
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+}
+ 
+.card .form-group label {
+  font-size: 18px;
+  color: #555;
+}
+ 
+.card .form-group  input[type="text"],
+.card .form-group input[type="email"],
+.card .form-group input[type="password"] {
+  padding: 12px;
+  width: 94%;
+  background: #efefef;
+  border: 0;
+  font-size: 12px;
+  margin: 12px 0px;
+  outline: none;
+}
+ 
+.btn-submit {
+  background: #3498db;
+  color: #fff;
+  border: 0;
+  padding: 8px 12px;
+}
