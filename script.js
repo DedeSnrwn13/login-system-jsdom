@@ -16,12 +16,12 @@ function registerForm(e) {
     console.log('User berhasil ditambahkan'); 
 
     if (username != "" && email != "" && pass != "") {
-        alert('Berhasil melalukan Pendaftaran');
+        alert('Berhasil melalukan Pendaftaran. Halaman akan berpindah setelah menekan "Oke"');
 
         return setTimeout(
             function () {
                 window.location = "http://127.0.0.1:5500/login.html";
-            }, 2000
+            }, 1500
         );
     } else {
         alert('Anda harus mengisi data dengan lengkap !');
@@ -29,7 +29,7 @@ function registerForm(e) {
         return setTimeout(
             function () {
                 window.location = "http://127.0.0.1:5500/register.html";
-            }, 2000
+            }, 1500
         );
     }
 }
@@ -49,10 +49,12 @@ function loginForm(e) {
         if (user = null) {
             result.innerHTML = 'Username tidak diketahui';
         } else if (username == data.username && pass == data.password) {
+            alert('Berhasil Login. Halaman akan berpindah setelah menekan "Oke"');
+
             setTimeout(
                 function () {
                     window.location = "http://127.0.0.1:5500/index.html";
-                }, 2000
+                }, 1500
             );
             
             result.innerHTML = 'Anda Berhasil Log In';
@@ -65,7 +67,7 @@ function loginForm(e) {
         return setTimeout(
             function () {
                 window.location = "http://127.0.0.1:5500/login.html";
-            }, 2000
+            }, 1500
         );
     }
 }
